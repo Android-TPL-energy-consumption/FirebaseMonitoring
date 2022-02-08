@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "415284749390",
+    "project_id": "fir-monitoring-dd912",
+    "storage_bucket": "fir-monitoring-dd912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415284749390:android:e3fe32db91f51e38e6cf1f",
+        "android_client_info": {
+          "package_name": "tpl.monitoring.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415284749390-qqpgon17pitekkohng8chtmrojkrdjs4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCktcHxV63jOay4G5XRzZuPqEaBo_NXMyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415284749390-qqpgon17pitekkohng8chtmrojkrdjs4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
