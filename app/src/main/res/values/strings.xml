@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MonitoringTemplate</string>
+    <string name="random_desc">Random description</string>
+</resources>
