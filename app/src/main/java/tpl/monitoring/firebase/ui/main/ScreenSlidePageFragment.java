@@ -1,4 +1,4 @@
-package tpl.monitoring.template.ui.main;
+package tpl.monitoring.firebase.ui.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import tpl.monitoring.template.R;
-import tpl.monitoring.template.databinding.FragmentScreenSlidePageBinding;
+import tpl.monitoring.firebase.R;
+import tpl.monitoring.firebase.databinding.FragmentScreenSlidePageBinding;
 
 public class ScreenSlidePageFragment extends Fragment {
     private final int _position;

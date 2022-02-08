@@ -1,4 +1,4 @@
-package tpl.monitoring.template;
+package tpl.monitoring.firebase;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("tpl.monitoring.template", appContext.getPackageName());
+        assertEquals("tpl.monitoring.firebase", appContext.getPackageName());
     }
 }
