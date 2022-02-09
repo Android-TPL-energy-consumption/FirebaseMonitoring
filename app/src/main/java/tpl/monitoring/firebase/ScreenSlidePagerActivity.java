@@ -10,6 +10,8 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 import tpl.monitoring.firebase.ui.main.ScreenSlidePageFragment;
 
 public class ScreenSlidePagerActivity extends FragmentActivity {
@@ -26,6 +28,15 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
         FragmentStateAdapter pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(),
                 super.getLifecycle());
         mPager.setAdapter(pagerAdapter);
+        mPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                Bundle bundle = new Bundle();
+                bundle.putInt("page", position);
+                FirebaseAnalytics.getInstance(ScreenSlidePagerActivity.super.getBaseContext()).logEvent("pageEvent", bundle);
+            }
+        });
     }
 
     /**
